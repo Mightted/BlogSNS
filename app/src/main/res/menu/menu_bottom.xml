@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:icon="@drawable/ic_bottom_home_24dp"
+            android:id="@+id/nav_first"
+            android:title="@string/bottom_home" />
+
+        <item
+            android:icon="@drawable/ic_bottom_search_24dp"
+            android:id="@+id/nav_second"
+            android:title="@string/bottom_find" />
+
+        <item
+            android:icon="@drawable/ic_bottom_message_24dp"
+            android:id="@+id/nav_third"
+            android:title="@string/bottom_msg" />
+
+    </group>
+
+</menu>

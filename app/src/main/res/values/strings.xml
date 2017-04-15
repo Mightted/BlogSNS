@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BlogSNS</string>
+
+    <string name="nav_user">用户</string>
+    <string name="nav_follow">关注</string>
+    <string name="nav_blog">我的博客</string>
+    <string name="nav_collection">收藏</string>
+    <string name="nav_history">阅读历史</string>
+    <string name="nav_suggestion">反馈</string>
+    <string name="nav_settings">设置</string>
+
+    <string name="bottom_home">首页</string>
+    <string name="bottom_find">搜索</string>
+    <string name="bottom_msg">动态</string>
+
+    <string name="btn_find">查找</string>
+
+    <string name="drawer_open">打开抽屉</string>
+    <string name="drawer_close">关闭抽屉</string>
+
+</resources>

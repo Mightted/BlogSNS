@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_nav_head_bg"
+    android:layout_height="200dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_head_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_nav_head_icon"/>
+
+    <TextView
+        android:id="@+id/nav_head_username"
+        android:text="Mightted"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_above="@+id/nav_head_email"/>
+
+    <TextView
+        android:id="@+id/nav_head_email"
+        android:text="sosowolf0125@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>

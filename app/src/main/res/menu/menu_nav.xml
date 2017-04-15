@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:icon="@drawable/ic_nav_user_24dp"
+            android:id="@+id/menu_nav_user"
+            app:actionProviderClass="com.mightted.blogsns.AppCompat.BubbleActionProvider"
+            android:title="@string/nav_user" />
+
+        <item
+            android:icon="@drawable/ic_nav_follow_24dp"
+            android:id="@+id/menu_nav_follow"
+            android:title="@string/nav_follow" />
+
+        <item
+            android:icon="@drawable/ic_nav_blog_24dp"
+            android:id="@+id/menu_nav_blog"
+            android:title="@string/nav_blog" />
+
+        <item
+            android:icon="@drawable/ic_nav_collection_24dp"
+            android:id="@+id/menu_nav_like"
+            android:title="@string/nav_collection" />
+
+        <item
+            android:icon="@drawable/ic_nav_history_24dp"
+            android:id="@+id/menu_nav_history"
+            android:title="@string/nav_history" />
+
+        <item
+            android:icon="@drawable/ic_nav_settings_24dp"
+            android:id="@+id/menu_nav_settings"
+            android:title="@string/nav_settings" />
+
+        <item
+            android:icon="@drawable/ic_nav_suggestion_24dp"
+            android:id="@+id/menu_nav_suggestion"
+            android:title="@string/nav_suggestion" />
+
+
+    </group>
+
+</menu>
