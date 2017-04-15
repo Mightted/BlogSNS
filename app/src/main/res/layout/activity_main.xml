@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.widget.DrawerLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/constrain_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context="com.mightted.blogsns.MainActivity">
 
@@ -16,8 +17,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="match_parent">
 
             <android.support.design.widget.AppBarLayout
                 android:id="@+id/appBar"
@@ -28,30 +28,46 @@
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
+                    android:layout_height="match_parent"
                     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
 
                 </android.support.v7.widget.Toolbar>
+
             </android.support.design.widget.AppBarLayout>
 
-
-            <FrameLayout
-                android:id="@+id/layout_content"
+            <RelativeLayout
+                android:id="@+id/content_drawer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/nav_bottom"
-                android:layout_below="@id/appBar" />
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appBar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/layout_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/nav_bottom" />
 
 
 
-            <android.support.design.widget.BottomNavigationView
-                android:id="@+id/nav_bottom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                app:menu="@menu/menu_bottom"/>
+                    <android.support.design.widget.BottomNavigationView
+                        android:id="@+id/nav_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        app:menu="@menu/menu_bottom"/>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
 
 
         </RelativeLayout>
@@ -59,18 +75,8 @@
 
 
 
+
     </android.support.design.widget.CoordinatorLayout>
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/menu_nav"
-        app:headerLayout="@layout/nav_head"/>
 
-
-
-
-
-</android.support.v4.widget.DrawerLayout>
+</android.support.constraint.ConstraintLayout>

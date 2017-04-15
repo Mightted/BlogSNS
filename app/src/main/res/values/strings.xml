@@ -1,13 +1,19 @@
 <resources>
     <string name="app_name">BlogSNS</string>
 
+    <string name="user_name">未登录</string>
+
+    <string name="change_account">切换账号</string>
+    <string name="change_account_des">使用其他账号进行登录</string>
+
+
     <string name="nav_user">用户</string>
     <string name="nav_follow">关注</string>
     <string name="nav_blog">我的博客</string>
     <string name="nav_collection">收藏</string>
     <string name="nav_history">阅读历史</string>
-    <string name="nav_suggestion">反馈</string>
     <string name="nav_settings">设置</string>
+    <string name="nav_suggestion">反馈</string>
 
     <string name="bottom_home">首页</string>
     <string name="bottom_find">搜索</string>
