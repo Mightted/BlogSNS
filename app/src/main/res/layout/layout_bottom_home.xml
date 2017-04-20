@@ -13,6 +13,8 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        app:pstsIndicatorColor="#6068c3"
+        app:pstsIndicatorHeight="2dp"
         app:pstsShouldExpand="true"/>
 
     <android.support.v4.view.ViewPager

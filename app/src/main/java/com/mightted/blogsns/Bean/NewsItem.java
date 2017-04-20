@@ -6,10 +6,27 @@ package com.mightted.blogsns.Bean;
 
 public class NewsItem {
 
+    String id;
     private String title;
     private String user;
-    private int scan;
-    private int comment;
+    private String scan;
+    private String comment;
+
+    public NewsItem(String title,String id) {
+        this.title = title;
+        this.id = id;
+        user = "user";
+        scan = "-";
+        comment = "-";
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -27,19 +44,19 @@ public class NewsItem {
         this.user = user;
     }
 
-    public int getScan() {
+    public String getScan() {
         return scan;
     }
 
-    public void setScan(int scan) {
+    public void setScan(String scan) {
         this.scan = scan;
     }
 
-    public int getComment() {
+    public String getComment() {
         return comment;
     }
 
-    public void setComment(int comment) {
+    public void setComment(String comment) {
         this.comment = comment;
     }
 }

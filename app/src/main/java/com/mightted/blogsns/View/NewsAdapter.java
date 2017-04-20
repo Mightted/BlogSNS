@@ -48,8 +48,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         NewsItem item = newsList.get(position);
         holder.titleText.setText(item.getTitle());
         holder.userText.setText(item.getUser());
-        holder.scanText.setText(Integer.toString(item.getScan()));
-        holder.commentText.setText(Integer.toString(item.getComment()));
+        holder.scanText.setText(item.getScan());
+        holder.commentText.setText(item.getComment());
     }
 
     @Override

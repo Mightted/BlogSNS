@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="fastadapter-2.5.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/0f41e400f86c77b495c4cf11c655513bf6122339/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/0f41e400f86c77b495c4cf11c655513bf6122339/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/25dd61893bc2ed748a451bc7ce4e533d59d02530/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/25dd61893bc2ed748a451bc7ce4e533d59d02530/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
